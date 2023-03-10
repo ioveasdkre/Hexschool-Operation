@@ -2,13 +2,13 @@
 
 [HackMD 連結](https://hackmd.io/4VXGklw9QY-23le04ymxQQ?view)
 
-### 1. Create a school database.
+### 0. Create a school database.
 
 ```shell
 use school
 ```
 
-### 2. Insert one data into the "students" collection.
+### 1. Insert one data into the "students" collection.
 
 ```shell
 db.students.insertOne({
@@ -56,19 +56,19 @@ db.students.insertMany([
 db.students.find();
 ```
 
-### 4. Retrieve data from the "students" collection where the group attribute contains B.
+### 4. Retrieve data from the "students" collection where the "group" field contains "B".
 
 ```shell
 db.students.find({ group: "B" });
 ```
 
-### 5. Retrieve data from the "students" collection where the score attribute is greater than 60.
+### 5. Retrieve data from the "students" collection where the "score" field is greater than 60.
 
 ```shell
 db.students.find({ score: { $gt: 60 } });
 ```
 
-### 6. Retrieve data from the "students" collection where the score attribute is greater than 60 or group attribute contains B.
+### 6. Retrieve data from the "students" collection where the "score" field is greater than 60 or the "group" field contains "B".
 
 ```shell
 db.students.find({
