@@ -1,3 +1,5 @@
+// https://hackmd.io/grmV5W6IQ5KRT4ranuW3Fw?view
+
 const checkScore = () => {
   return new Promise((resolve, reject) => {
     /* 回傳一個 Promise，並執行以下非同步操作*/
