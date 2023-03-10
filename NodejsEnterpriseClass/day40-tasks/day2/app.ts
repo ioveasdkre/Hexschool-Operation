@@ -1,3 +1,5 @@
+// Day 2 - 非同步概念、使用 Promise
+
 // https://hackmd.io/bLZ9lp32Q0aRHE2EHq9DYA
 
 interface dataModel {

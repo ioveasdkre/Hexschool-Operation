@@ -1,3 +1,5 @@
+// Day 1 - 非同步概念、建立 Promise
+
 // https://hackmd.io/grmV5W6IQ5KRT4ranuW3Fw?view
 
 const checkScore = () => {
