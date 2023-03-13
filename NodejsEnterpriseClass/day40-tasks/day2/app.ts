@@ -2,13 +2,13 @@
 
 // https://hackmd.io/bLZ9lp32Q0aRHE2EHq9DYA
 
-interface dataModel {
+interface IDataModel {
   name: string;
   score: number;
 }
 
 // 批改作業
-function correctTest(name: string): Promise<dataModel> {
+function correctTest2(name: string): Promise<IDataModel> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const score = Math.round(Math.random() * 100);
@@ -24,7 +24,7 @@ function correctTest(name: string): Promise<dataModel> {
   });
 }
 // 檢查獎勵
-function checkReward(data: dataModel) {
+function checkReward2(data: IDataModel) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (data.score >= 90) {
@@ -39,7 +39,7 @@ function checkReward(data: dataModel) {
 }
 
 // 執行函式
-correctTest("Benson")
-  .then((data) => checkReward(data))
+correctTest2("Benson")
+  .then((data) => checkReward2(data))
   .then((reward) => console.log(reward))
   .catch((err) => console.log(err));
