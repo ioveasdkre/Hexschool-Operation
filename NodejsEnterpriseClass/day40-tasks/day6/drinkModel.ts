@@ -2,9 +2,9 @@
 
 // https://hackmd.io/wWcoMxCYRtmtfhjDrwNgew?view
 
-import { Schema, model, Document } from "mongoose";
+import { Schema, model } from "mongoose";
 
-interface IDrinks extends Document {
+interface IDrinks {
   product: string;
   price: number;
   ice: string;
