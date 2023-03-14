@@ -47,7 +47,7 @@ async function runDave() {
     sugar: "微糖",
   });
 
-  testDrink
+  await testDrink
     .save()
     .then(() => {
       console.log("save() 新增資料成功");
