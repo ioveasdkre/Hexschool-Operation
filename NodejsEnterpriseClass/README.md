@@ -1,4 +1,14 @@
-npm i
+## 安裝環境
+```bash
+npm install -g ts-node
+```
 
-查看範例時請更改路徑
+## 初始化
+```bash
+npm i
+```
+
+## 查看範例時請更改路徑
+```bash
 npm run start
+```

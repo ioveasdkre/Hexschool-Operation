@@ -4,7 +4,7 @@
 
 import { Schema, model } from "mongoose";
 
-interface IDrinks {
+interface IDrink {
   product: string;
   price: number;
   ice: string;
@@ -12,7 +12,7 @@ interface IDrinks {
   toppings: string[];
 }
 
-const drinkSchema = new Schema<IDrinks>({
+const drinkSchema = new Schema<IDrink>({
   product: {
     type: String,
     required: [true, "產品名稱未填寫"],
@@ -34,6 +34,6 @@ const drinkSchema = new Schema<IDrinks>({
   },
 });
 
-const Drink = model<IDrinks>("Drink", drinkSchema);
+const Drink = model<IDrink>("Drink", drinkSchema);
 
-export { Drink, IDrinks };
+export { Drink, IDrink };

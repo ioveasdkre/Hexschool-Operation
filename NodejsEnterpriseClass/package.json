@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node ./day40-tasks/day1/app"
+    "start": "npx nodemon ./day40-tasks/day7/app.ts"
   },
   "keywords": [],
   "author": "",
