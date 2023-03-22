@@ -1,0 +1,10 @@
+貼文集合欄位介紹
+
+name：貼文姓名
+image：貼文圖片
+content：貼文內容
+likes：按讚數
+comment：留言數
+createdAt：發文時間
+type：貼文種類[fan(粉絲)、group(社團)]
+tags：貼文標籤
