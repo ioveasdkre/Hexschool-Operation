@@ -4,8 +4,8 @@
 
 import express from "express";
 import mongoose from "mongoose";
-import { authorRouter } from "./routes/aothorRoute";
-import { bookRouter } from "./routes/bookRoute";
+import { authorRouter } from "./routers/aothorRouter";
+import { bookRouter } from "./routers/bookRouter";
 
 const app = express();
 

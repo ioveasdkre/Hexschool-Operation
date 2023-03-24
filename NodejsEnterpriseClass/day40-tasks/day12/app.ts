@@ -3,10 +3,10 @@
 // https://hackmd.io/_2_FdGD4T6yz-6MewRSTxQ
 
 import express from "express";
-import { loginRouter } from "./routes/login";
-import { registerRouter } from "./routes/register";
-import { postsRouter } from "./routes/posts";
-import { userRouter } from "./routes/user";
+import { loginRouter } from "./routers/login";
+import { registerRouter } from "./routers/register";
+import { postsRouter } from "./routers/posts";
+import { userRouter } from "./routers/user";
 
 const app = express();
 

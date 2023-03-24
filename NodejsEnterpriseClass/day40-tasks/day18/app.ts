@@ -3,7 +3,7 @@
 // https://hackmd.io/f-wGFdjqQeGpaqJE_Ufo3w
 import express from "express";
 import mongoose from "mongoose";
-import { postRouter } from "./routers/postRoute";
+import { postRouter } from "./routers/postRouter";
 
 const app = express();
 

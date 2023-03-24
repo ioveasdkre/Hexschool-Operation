@@ -16,8 +16,7 @@ router.get("", async function (req, res) {
         status: "Bad request",
       });
     }
-    console.log(timeSort);
-    console.log(limit);
+
     const posts = await Post.find()
       .sort({ title: timeSort })
       .limit(limit); /* 請填入答案 */
