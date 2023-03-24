@@ -36,4 +36,4 @@ router.get("/:authorId", async function (req, res) {
   }
 });
 
-export { router as bookRoute };
+export { router as bookRouter };

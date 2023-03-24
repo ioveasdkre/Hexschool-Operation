@@ -9,4 +9,4 @@ router.post("", (_req, res) => {
   res.send("新增一則貼文");
 });
 
-export { router as postsRoute };
+export { router as postsRouter };

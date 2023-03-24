@@ -3,17 +3,17 @@
 // https://hackmd.io/_2_FdGD4T6yz-6MewRSTxQ
 
 import express from "express";
-import { loginRoute } from "./routes/login";
+import { loginRouter } from "./routes/login";
 import { registerRouter } from "./routes/register";
-import { postsRoute } from "./routes/posts";
-import { userRoute } from "./routes/user";
+import { postsRouter } from "./routes/posts";
+import { userRouter } from "./routes/user";
 
 const app = express();
 
-app.use("/login", loginRoute);
+app.use("/login", loginRouter);
 app.use("/register", registerRouter);
-app.use("/posts", postsRoute);
-app.use("/user", userRoute);
+app.use("/posts", postsRouter);
+app.use("/user", userRouter);
 
 const port = process.env.PORT || 3000;
 

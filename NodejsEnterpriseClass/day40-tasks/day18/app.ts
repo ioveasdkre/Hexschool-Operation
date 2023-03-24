@@ -1,11 +1,9 @@
-// Day 17 - Mongoose - Populate
+// Day 18 - 取得資料搭配 sort()、limit()
 
-// https://hackmd.io/zEE8qgbmSgey_qPX67jo0g
-
+// https://hackmd.io/f-wGFdjqQeGpaqJE_Ufo3w
 import express from "express";
 import mongoose from "mongoose";
-import { authorRouter } from "./routes/aothorRoute";
-import { bookRouter } from "./routes/bookRoute";
+import { postRouter } from "./routers/postRoute";
 
 const app = express();
 
@@ -18,8 +16,7 @@ mongoose
 // 啟用 JSON 解析中介軟體
 app.use(express.json());
 
-app.use("/aothor", authorRouter);
-app.use("/book", bookRouter);
+app.use("/", postRouter);
 
 const port = process.env.PORT || 3000;
 

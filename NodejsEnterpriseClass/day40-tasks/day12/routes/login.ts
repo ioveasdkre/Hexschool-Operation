@@ -16,4 +16,4 @@ router.post("", (req, res) => {
   else res.send("登入成功");
 });
 
-export { router as loginRoute };
+export { router as loginRouter };

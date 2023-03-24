@@ -28,4 +28,4 @@ router.post("", async function (req, res) {
   }
 });
 
-export { router as productsRoute };
+export { router as productsRouter };

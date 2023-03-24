@@ -4,7 +4,7 @@
 
 import express from "express";
 import mongoose from "mongoose";
-import { productsRoute } from "./routes/productsRoute";
+import { productsRouter } from "./routes/productsRoute";
 
 const app = express();
 
@@ -18,7 +18,7 @@ mongoose
   .catch((error: Error) => console.log(error));
 
 
-app.use("/products", productsRoute);
+app.use("/products", productsRouter);
 
 const port = process.env.PORT || 3000;
 

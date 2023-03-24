@@ -36,4 +36,4 @@ router.post("", async function (req, res) {
   }
 });
 
-export { router as authorRoute };
+export { router as authorRouter };

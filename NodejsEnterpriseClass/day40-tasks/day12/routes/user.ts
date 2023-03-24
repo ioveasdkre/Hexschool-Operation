@@ -11,4 +11,4 @@ router.get("/:id/track", (req, res) => {
   res.send(`${id} 個人追蹤名單`);
 });
 
-export { router as userRoute };
+export { router as userRouter };
