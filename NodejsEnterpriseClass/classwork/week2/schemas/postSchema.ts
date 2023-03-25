@@ -1,5 +1,5 @@
 import { Schema } from "mongoose";
-import { IPost } from "../interfaces/postInterface";
+import { IPost } from "../interfaces/models/postInterface";
 
 const postSchema = new Schema<IPost>({
   title: { type: String, required: [true, "Title is required"] },
