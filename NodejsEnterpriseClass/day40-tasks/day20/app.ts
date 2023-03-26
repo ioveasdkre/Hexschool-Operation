@@ -1,10 +1,7 @@
-// Day 19 - Middleware
-
-// https://hackmd.io/phvQSEsgQTicgXAMjkxL_Q
-
 import express, { Request, Response, NextFunction } from "express";
 import mongoose from "mongoose";
-import { userRouter } from "./routers/user.router";
+import { PostRouter } from "./routers/postRouter";
+import { UserRouter } from "./routers/userRouter";
 import { handleNotFoundError } from "./utils/handleError";
 
 const app = express();
@@ -18,17 +15,23 @@ mongoose
 // 啟用 JSON 解析中介軟體
 app.use(express.json());
 
-const login = function (req: Request, res: Response, next: NextFunction) {
-  const url = req.url;
-  if (url !== "/") {
-    // throw new Error("除數不能為零");
-    next(); // 進入下一步，若不設定會卡住。
-  } else {
-    res.status(400).send("你的登入資料有錯");
+// 定義一個中間件函數
+const login = (req: Request, res: Response, next: NextFunction) => {
+  // 在這裡對請求進行驗證或處理
+  const token = req.headers.authorization;
+  if (!token) {
+    return handleNotFoundError(res, 401, "error", "未驗證的用戶");
   }
+  // 驗證通過，執行下一個處理程序
+  return next();
 };
 
-app.use("/user", login, userRouter);
+app.use("/posts", PostRouter);
+app.use("/user", login, UserRouter);
+
+app.get("/test", (_req, _res) => {
+  throw new Error("路由測試發生錯誤");
+});
 
 // 處理 404
 app.use(function (_req, res, _next) {
@@ -43,7 +46,7 @@ app.use(function (
   _next: NextFunction
 ) {
   console.error(err?.stack);
-  handleNotFoundError(res, 500, "error", "系統錯誤，請恰系統管理員");
+  handleNotFoundError(res, 500, "error", "系統錯誤，請聯絡系統管理員");
 });
 
 const port = process.env.PORT || 3000;
