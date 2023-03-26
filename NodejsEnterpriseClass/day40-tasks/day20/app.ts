@@ -1,16 +1,10 @@
 import express, { Request, Response, NextFunction } from "express";
-import mongoose from "mongoose";
+import "./connections/mongoDB";
 import { PostRouter } from "./routers/postRouter";
 import { UserRouter } from "./routers/userRouter";
 import { handleNotFoundError } from "./utils/handleError";
 
 const app = express();
-
-// 連線到 MongoDB
-mongoose
-  .connect("mongodb://127.0.0.1:27017/test")
-  .then(() => console.log("資料庫連線成功"))
-  .catch((error: Error) => console.log(error));
 
 // 啟用 JSON 解析中介軟體
 app.use(express.json());
@@ -49,8 +43,4 @@ app.use(function (
   handleNotFoundError(res, 500, "error", "系統錯誤，請聯絡系統管理員");
 });
 
-const port = process.env.PORT || 3000;
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+export default app;
