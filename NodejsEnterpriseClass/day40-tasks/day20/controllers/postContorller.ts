@@ -3,9 +3,9 @@ import { IPost } from "../interfaces/models/postInterface";
 import { IHeaders } from "../interfaces/utils/headerInterface";
 import { Post } from "../models/postModel";
 import { isValidObjectId } from "../utils/utils";
-import { handleSuccess } from "../utils/handleSuccess";
-import { handleError } from "../utils/handleError";
-import { headers } from "../utils/headers";
+import { handleSuccess } from "../helpers/handleSuccess";
+import { handleError } from "../helpers/handleError";
+import { headers } from "../helpers/headers";
 
 class PostController {
   public static async getAllPosts(_req: Request, res: Response): Promise<void> {

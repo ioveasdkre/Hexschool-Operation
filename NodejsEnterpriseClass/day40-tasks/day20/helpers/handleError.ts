@@ -19,7 +19,7 @@ const handleError = (
   });
 };
 
-const handleNotFoundError = (
+const handleResponse = (
   res: Response,
   statusCode: number,
   status: string,
@@ -33,4 +33,4 @@ const handleNotFoundError = (
   });
 };
 
-export { handleError, handleNotFoundError };
+export { handleError, handleResponse };
