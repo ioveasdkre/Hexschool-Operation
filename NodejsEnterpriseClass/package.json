@@ -7,12 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "day": "npx nodemon ./day40-tasks/day22/app.ts",
     "week": "npx nodemon ./classwork/week2/app.ts",
-    "my_express": "npx nodemon ./day40-tasks/day20/bin/www.ts"
+    "my_express": "npx nodemon ./day40-tasks/day20/bin/www.ts",
+    "start:dev": "cross-env NODE_ENV=dev nodemon ./day40-tasks/day23/app.ts",
+    "start:production": "cross-env NODE_ENV=production nodemon ./day40-tasks/day23/app.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
