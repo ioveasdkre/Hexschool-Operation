@@ -1,1 +1,4 @@
-db.posts.updateMany({ tags: "感情" }, { $pull: { tags: "感情" } });
+db.posts.find().populate({
+  path: "user",
+  select: "name photo",
+});
