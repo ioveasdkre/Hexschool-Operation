@@ -16,7 +16,7 @@ class PostController {
       // const timeSort = query.timeSort === "asc" ? "asc" : "desc";
 
       const timeSort = query.timeSort === "asc" ? "createdAt" : "-createdAt";
-      console.log(timeSort);
+
       const q = query.q !== undefined ? { content: new RegExp(query.q) } : {};
 
       const posts: IPost[] = await Post.find(q)
@@ -42,7 +42,7 @@ class PostController {
 
       if (data.content === undefined) return handleError(res);
 
-      const newPost = await Post.create({
+      const newPost: IPost = await Post.create<Partial<IPost>>({
         content: data.content,
         image: data.image,
         likes: data.likes,
