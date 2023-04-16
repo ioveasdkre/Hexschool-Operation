@@ -1,5 +1,6 @@
 // Day 21 - uncaughtException、unhandledRejection
 // https://hackmd.io/qZdghVhCQjGFu5wNDFXIjA?view
+
 import express, { Request, Response, NextFunction } from "express";
 import http from "http";
 import { throwUnhandledRejection } from "./test-errors";

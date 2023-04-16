@@ -1,3 +1,6 @@
+// HTTP 狀態碼
+// https://hackmd.io/gvnoZwkLSh2ojP4M4ML9Ag
+
 import express from "express";
 import { connectToDatabase } from "./connections/mongoDB";
 import { handle404Error, handleErrors } from "./middlewares/errorsMiddleware";
