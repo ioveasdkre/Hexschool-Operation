@@ -35,7 +35,7 @@ const errorTest = (q: number) => {
 };
 
 const errorLogin = (_req: Request, _res: Response, next: NextFunction) => {
-  return next(appError(401, "您並未登入", next));
+  next(appError(401, "您並未登入", next));
 };
 
 export { errorTest, errorLogin };
