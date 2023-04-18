@@ -66,7 +66,7 @@ app.post("/", async (req: Request, res: Response, next: NextFunction) => {
     const data = req.body;
     if (!data.content) {
       // 將以下改為 appError 自訂錯誤回饋
-      return next(appError(400, "content 欄位為必填", next));
+      next(appError(400, "content 欄位為必填", next));
     }
     const newPost = await Post.create({
       user: data.user,

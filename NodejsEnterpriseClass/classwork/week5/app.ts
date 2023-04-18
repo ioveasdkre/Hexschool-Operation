@@ -18,9 +18,9 @@ app.use(express.json());
 app.use("/posts", PostRouter);
 app.use("/user", UserRouter);
 
-errorTest(4); // 錯誤測試
+app.get("/", errorLogin); // 自訂錯誤訊息. 參 day22
 
-app.use(errorLogin); // 自訂錯誤訊息. 參 day22
+errorTest(4); // 錯誤測試
 
 // 處理 404
 app.use(handle404Error); // 路由錯誤. 參 day19
