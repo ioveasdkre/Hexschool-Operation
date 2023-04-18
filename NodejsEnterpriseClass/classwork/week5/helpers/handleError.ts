@@ -39,7 +39,7 @@ function handleUncaughtException(err: Error) {
   console.error("Uncaughted Exception！");
   console.error(err.name);
   console.error(err.message);
-  console.error(err.stack);
+  console.error(err.stack); // node獨有
   process.exit(1);
 }
 
