@@ -8,3 +8,4 @@
 - [Lesson06-JWT 身份驗證機制](https://hackmd.io/29lgqlDtSNCEFY4Y3I9gZQ?view)
 - [Lesson07-Firebase Storage 整合](https://hackmd.io/Cw45UqaITka8rvkJv12Ixw?view)
 - [Lesson08-實作一個 FB、IG 牆吧！ 專題牆](https://hackmd.io/lUqknea4QKOttR1y7ehB7A?view)
+- [Lesson09-Vitest 單元測試](https://israynotarray.com/vitest/20230420/4055762937/)
