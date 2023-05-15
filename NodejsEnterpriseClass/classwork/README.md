@@ -9,3 +9,5 @@
 - [Lesson07-Firebase Storage 整合](https://hackmd.io/Cw45UqaITka8rvkJv12Ixw?view)
 - [Lesson08-實作一個 FB、IG 牆吧！ 專題牆](https://hackmd.io/lUqknea4QKOttR1y7ehB7A?view)
 - [Lesson09-Vitest 單元測試](https://israynotarray.com/vitest/20230420/4055762937/)
+- [Lesson10-AWS Educate 與 EC2、S3、GitHub Actions](https://www.notion.so/AWS-Educate-7c0100eb986d4a6f9d4314dc34fb327e)
+- [Lesson10-WebSocket 即時訊息設計](https://israynotarray.com/nodejs/20230504/3177278058/)
