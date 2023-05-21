@@ -11,3 +11,4 @@
 - [Lesson09-Vitest 單元測試](https://israynotarray.com/vitest/20230420/4055762937/)
 - [Lesson10-AWS Educate 與 EC2、S3、GitHub Actions](https://www.notion.so/AWS-Educate-7c0100eb986d4a6f9d4314dc34fb327e)
 - [Lesson10-WebSocket 即時訊息設計](https://israynotarray.com/nodejs/20230504/3177278058/)
+- [Lesson11-Google 第三方登入](https://hackmd.io/lUqknea4QKOttR1y7ehB7A?view)
