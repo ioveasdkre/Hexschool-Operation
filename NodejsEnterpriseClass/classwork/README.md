@@ -12,4 +12,4 @@
 - [Lesson10-AWS Educate 與 EC2、S3、GitHub Actions](https://www.notion.so/AWS-Educate-7c0100eb986d4a6f9d4314dc34fb327e)
 - [Lesson10-WebSocket 即時訊息設計](https://israynotarray.com/nodejs/20230504/3177278058/)
 - [Lesson11-Google 第三方登入](https://hackmd.io/lUqknea4QKOttR1y7ehB7A?view)
-- [Lesson12-Email 服務整合](https://www.hexschool.com/2023/01/31/2023-01-31-nodejs-live-course/)
+- [Lesson12-Email 服務整合](https://hackmd.io/6gDNucH2R3OvY-lQ5q9vmw?view)
